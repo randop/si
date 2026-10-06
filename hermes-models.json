@@ -1,6 +1,124 @@
 {
   "data": [
     {
+      "id": "mistralai/mistral-large-4-0",
+      "canonical_slug": "mistralai/mistral-large-4-0-20261006",
+      "hugging_face_id": null,
+      "name": "Mistral: Mistral Large 4",
+      "created": 1791294122,
+      "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 512K-token context window with up...",
+      "context_length": 524288,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000006800",
+        "completion": "0.0000020900",
+        "input_cache_read": "0.0000000700"
+      },
+      "top_provider": {
+        "context_length": 524288,
+        "max_completion_tokens": 262144,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/mistralai/mistral-large-4-0-20261006/endpoints"
+      },
+      "aliases": [
+        "mistralai/mistral-large-4-0-20261006"
+      ]
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash",
+      "canonical_slug": "inclusionai/ling-3.1-flash-20261002",
+      "hugging_face_id": null,
+      "name": "inclusionAI: Ling 3.1 Flash",
+      "created": 1790950024,
+      "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000000000",
+        "completion": "0.0000000000"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/inclusionai/ling-3.1-flash-20261002/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true
+      },
+      "aliases": [
+        "inclusionai/ling-3.1-flash-20261002"
+      ]
+    },
+    {
       "id": "unbiased/pareto-26.10-preview",
       "canonical_slug": "unbiased/pareto-26.10-preview-20260929",
       "hugging_face_id": null,
@@ -102,7 +220,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -641,70 +760,6 @@
       ]
     },
     {
-      "id": "stealth/space-bunny-alpha",
-      "canonical_slug": "stealth/space-bunny-alpha",
-      "hugging_face_id": null,
-      "name": "Space Bunny Alpha",
-      "created": 1790174884,
-      "description": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space...",
-      "context_length": 1000000,
-      "architecture": {
-        "modality": "text+image+video->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.0000000000",
-        "completion": "0.0000000000"
-      },
-      "top_provider": {
-        "context_length": 1000000,
-        "max_completion_tokens": 524288,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-10-05",
-      "links": {
-        "details": "/api/v1/models/stealth/space-bunny-alpha/endpoints"
-      },
-      "reasoning": {
-        "mandatory": true,
-        "supported_efforts": [
-          "max",
-          "xhigh",
-          "high",
-          "medium",
-          "low"
-        ],
-        "default_effort": "max"
-      },
-      "aliases": [
-        "stealth/space-bunny-alpha"
-      ]
-    },
-    {
       "id": "aion-labs/aion-3.5-mini",
       "canonical_slug": "aion-labs/aion-3.5-mini-20260923",
       "hugging_face_id": null,
@@ -1014,7 +1069,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1099,7 +1155,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1185,7 +1242,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1270,7 +1328,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1356,7 +1415,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1441,7 +1501,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1527,7 +1588,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1612,7 +1674,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -1875,9 +1938,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000700",
+        "prompt": "0.0000001000",
         "completion": "0.0000002800",
-        "input_cache_read": "0.0000000020",
+        "input_cache_read": "0.0000000500",
         "original": {
           "prompt": "0.0000001400",
           "completion": "0.0000002800",
@@ -1894,6 +1957,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -1907,6 +1971,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -1950,9 +2015,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000004133",
-        "completion": "0.0000008265",
-        "input_cache_read": "0.0000000038",
+        "prompt": "0.0000004300",
+        "completion": "0.0000008700",
+        "input_cache_read": "0.0000000036",
         "original": {
           "prompt": "0.0000004350",
           "completion": "0.0000008700",
@@ -1960,8 +2025,8 @@
         }
       },
       "top_provider": {
-        "context_length": 1050000,
-        "max_completion_tokens": 945000,
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -2282,9 +2347,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001748",
-        "completion": "0.0000035000",
-        "input_cache_read": "0.0000001748"
+        "prompt": "0.0000002458",
+        "completion": "0.0000042000",
+        "input_cache_read": "0.0000002500"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -2358,9 +2423,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000250",
-        "completion": "0.0000006000",
-        "input_cache_read": "0.0000000250"
+        "prompt": "0.0000000450",
+        "completion": "0.0000012000",
+        "input_cache_read": "0.0000000150"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -2464,7 +2529,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -2622,7 +2688,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -2708,7 +2775,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -2979,14 +3047,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000250",
-        "completion": "0.0000006000",
-        "input_cache_read": "0.0000000250",
-        "original": {
-          "prompt": "0.0000003000",
-          "completion": "0.0000012000",
-          "input_cache_read": "0.0000000060"
-        }
+        "prompt": "0.0000000450",
+        "completion": "0.0000012000",
+        "input_cache_read": "0.0000000150"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -3248,6 +3311,86 @@
       ]
     },
     {
+      "id": "openai/gpt-6-astra",
+      "canonical_slug": "openai/gpt-6-astra-20260903",
+      "hugging_face_id": null,
+      "name": "OpenAI: GPT-6 Astra",
+      "created": 1788552838,
+      "description": "GPT-6 Astra is OpenAI's flagship model for demanding end-to-end work. It is suited for advanced analysis, software engineering, deep research, scientific work, and document creation, with particular strengths in long-horizon...",
+      "context_length": 1050000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000100000",
+        "completion": "0.0000500000",
+        "web_search": "0.0100000000",
+        "input_cache_read": "0.0000010000",
+        "input_cache_write": "0.0000125000",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.00002",
+            "completion": "0.000075",
+            "input_cache_read": "0.000002",
+            "input_cache_write": "0.000025"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 1050000,
+        "max_completion_tokens": 128000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-6-astra-20260903/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "medium"
+      },
+      "aliases": [
+        "openai/gpt-6-astra-20260903"
+      ],
+      "frontier": true
+    },
+    {
       "id": "openai/gpt-6-astra:batch",
       "canonical_slug": "openai/gpt-6-astra-20260903",
       "hugging_face_id": null,
@@ -3299,7 +3442,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -3378,7 +3522,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -3456,7 +3601,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -4222,13 +4368,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000200",
-        "completion": "0.0000003000",
-        "input_cache_read": "0.0000000100"
+        "prompt": "0.0000000244",
+        "completion": "0.0000005000",
+        "input_cache_read": "0.0000000244"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -4379,7 +4525,7 @@
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -4600,13 +4746,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000600",
-        "completion": "0.0000026940",
-        "input_cache_read": "0.0000001760"
+        "prompt": "0.0000000300",
+        "completion": "0.0000120000",
+        "input_cache_read": "0.0000000300"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -4753,9 +4899,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000248",
+        "prompt": "0.0000000239",
         "completion": "0.0000043500",
-        "input_cache_read": "0.0000000198"
+        "input_cache_read": "0.0000000200"
       },
       "top_provider": {
         "context_length": 262144,
@@ -5232,14 +5378,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001748",
-        "completion": "0.0000035000",
-        "input_cache_read": "0.0000001748",
-        "original": {
-          "prompt": "0.0000013200",
-          "completion": "0.0000039600",
-          "input_cache_read": "0.0000000440"
-        }
+        "prompt": "0.0000002458",
+        "completion": "0.0000042000",
+        "input_cache_read": "0.0000002500"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -5598,9 +5739,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000108",
+        "prompt": "0.0000000103",
         "completion": "0.0000012800",
-        "input_cache_read": "0.0000000108"
+        "input_cache_read": "0.0000000103"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6240,7 +6381,7 @@
       "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-10-31",
       "links": {
         "details": "/api/v1/models/poolside/laguna-s-2.1-20260720/endpoints"
       },
@@ -6293,7 +6434,7 @@
       "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-10-31",
       "links": {
         "details": "/api/v1/models/poolside/laguna-s-2.1-20260720/endpoints"
       },
@@ -6797,9 +6938,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000006577",
-        "completion": "0.0000100000",
-        "input_cache_read": "0.0000006577",
+        "prompt": "0.0000008200",
+        "completion": "0.0000130000",
+        "input_cache_read": "0.0000004500",
         "original": {
           "prompt": "0.0000030000",
           "completion": "0.0000150000",
@@ -7130,7 +7271,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7213,7 +7355,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7299,7 +7442,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7382,7 +7526,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7468,7 +7613,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7551,7 +7697,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7637,7 +7784,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7720,7 +7868,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7811,7 +7960,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7896,7 +8046,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -7987,7 +8138,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -8072,7 +8224,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -8355,7 +8508,7 @@
       },
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-10-08",
       "links": {
         "details": "/api/v1/models/tencent/hy3-20260706/endpoints"
       },
@@ -8419,7 +8572,7 @@
       "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-10-31",
       "links": {
         "details": "/api/v1/models/poolside/laguna-xs-2.1-20260625/endpoints"
       },
@@ -8472,7 +8625,7 @@
       "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-10-31",
       "links": {
         "details": "/api/v1/models/poolside/laguna-xs-2.1-20260625/endpoints"
       },
@@ -10361,7 +10514,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -10506,9 +10660,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000006577",
-        "completion": "0.0000100000",
-        "input_cache_read": "0.0000006577"
+        "prompt": "0.0000008200",
+        "completion": "0.0000130000",
+        "input_cache_read": "0.0000004500"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -11126,7 +11280,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -11204,7 +11359,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -11285,7 +11441,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -11368,7 +11525,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -11496,9 +11654,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000045",
+        "prompt": "0.0000000031",
         "completion": "0.0000012800",
-        "input_cache_read": "0.0000000045"
+        "input_cache_read": "0.0000000031"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -11862,9 +12020,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000004342",
-        "completion": "0.0000018280",
-        "input_cache_read": "0.0000000731",
+        "prompt": "0.0000004650",
+        "completion": "0.0000024500",
+        "input_cache_read": "0.0000000975",
         "original": {
           "prompt": "0.0000009500",
           "completion": "0.0000040000",
@@ -12066,9 +12224,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000009646",
-        "completion": "0.0000030316",
-        "input_cache_read": "0.0000001791",
+        "prompt": "0.0000009660",
+        "completion": "0.0000030360",
+        "input_cache_read": "0.0000001794",
         "original": {
           "prompt": "0.0000014000",
           "completion": "0.0000044000",
@@ -12076,8 +12234,8 @@
         }
       },
       "top_provider": {
-        "context_length": 202752,
-        "max_completion_tokens": 131072,
+        "context_length": 200000,
+        "max_completion_tokens": 128000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -12658,7 +12816,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -12667,12 +12824,10 @@
         "response_format",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -12739,7 +12894,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -12813,7 +12969,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -12888,7 +13045,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -12962,7 +13120,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -13583,7 +13742,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -13662,7 +13822,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -13743,7 +13904,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -13827,7 +13989,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -14509,7 +14672,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -15812,7 +15976,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -16447,7 +16612,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -16515,7 +16681,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -16585,7 +16752,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -16659,7 +16827,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -16910,7 +17079,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -18185,7 +18355,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -18258,7 +18429,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -18330,7 +18502,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -18400,7 +18573,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -19676,7 +19850,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -19742,7 +19917,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -20393,14 +20569,9 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
-        "min_p",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
-        "seed",
         "stop",
         "structured_outputs",
         "temperature",
@@ -21101,7 +21272,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -21173,7 +21345,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -21246,7 +21419,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -21318,7 +21492,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -21391,7 +21566,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -21463,7 +21639,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {
         "temperature": null,
@@ -22215,7 +22392,7 @@
       },
       "supported_voices": null,
       "knowledge_cutoff": "2024-12-31",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "links": {
         "details": "/api/v1/models/z-ai/glm-4.5/endpoints"
       },
@@ -23697,6 +23874,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -23709,7 +23887,9 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_a",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -24427,7 +24607,8 @@
       },
       "pricing": {
         "prompt": "0.0000001875",
-        "completion": "0.0000006525"
+        "completion": "0.0000006525",
+        "input_cache_read": "0.0000000500"
       },
       "top_provider": {
         "context_length": 128000,
@@ -24616,6 +24797,7 @@
         "repetition_penalty",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -26995,6 +27177,75 @@
       "frontier": true
     },
     {
+      "id": "upstage/solar-mini4:free",
+      "canonical_slug": "upstage/solar-mini4-20260922",
+      "hugging_face_id": null,
+      "name": "Upstage: Solar Mini 4",
+      "created": 1790160358,
+      "description": "Solar Mini 4 is Upstage's compact, cost-efficient language model, a 35B-parameter mixture-of-experts with 3B active parameters and a 524K context window. It is built for agentic use cases where response...",
+      "context_length": 524288,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "input_cache_read": "0"
+      },
+      "top_provider": {
+        "context_length": 524288,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "parallel_tool_calls",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/upstage/solar-mini4-20260922/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": false,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low",
+          "minimal",
+          "none"
+        ],
+        "default_effort": "medium"
+      },
+      "aliases": [],
+      "synthesizedFreeVariant": true
+    },
+    {
       "id": "meituan/longcat-2.0:free",
       "canonical_slug": "meituan/longcat-2.0-20260720",
       "hugging_face_id": "meituan-longcat/LongCat-2.0",
@@ -27251,7 +27502,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -27328,7 +27580,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -27405,7 +27658,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -27482,7 +27736,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "default_parameters": {},
       "supported_voices": null,
@@ -27754,55 +28009,6 @@
       "aliases": [
         "anthropic/claude-haiku-4.5"
       ]
-    },
-    {
-      "id": "openai/gpt-6-astra",
-      "canonical_slug": "openai/gpt-6-astra",
-      "hugging_face_id": null,
-      "name": "GPT-6-Astra",
-      "created": 1788578068,
-      "description": "",
-      "context_length": 1050000,
-      "architecture": {},
-      "pricing": {
-        "prompt": "0.0000100000",
-        "completion": "0.0000500000",
-        "input_cache_read": "0.0000010000",
-        "input_cache_write": "0.0000125000",
-        "image": "0.0000000000"
-      },
-      "top_provider": {
-        "context_length": 1050000,
-        "max_completion_tokens": 128000
-      },
-      "supported_parameters": [
-        "max_completion_tokens",
-        "max_tokens",
-        "parallel_tool_calls",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "structured_outputs",
-        "tool_choice",
-        "tools"
-      ],
-      "default_parameters": {},
-      "reasoning": {
-        "supported_efforts": [
-          "max",
-          "xhigh",
-          "high",
-          "medium",
-          "low"
-        ],
-        "default_effort": "medium",
-        "default_enabled": true,
-        "mandatory": true
-      },
-      "aliases": [
-        "openai/gpt-6-astra"
-      ],
-      "frontier": true
     },
     {
       "id": "meituan/longcat-2.5-preview:free",
