@@ -3,10 +3,10 @@ set -euo pipefail
 
 # --- Defaults ---
 API_BASE="https://inference-api.nousresearch.com/v1"
-NOUS_MODEL="${NOUS_MODEL:-stealth/space-bunny-alpha}"
+NOUS_MODEL="${NOUS_MODEL:-stepfun/step-3.7-flash}"
 OUTPUT_FILE="hermes-models.json"
 DO_CHAT=false
-DO_LIST=true
+DO_LIST=false
 CUSTOM_PROMPT=""
 MAX_TOKENS=256
 
