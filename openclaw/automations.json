@@ -1,0 +1,128 @@
+{
+  "jobs": [
+    {
+      "id": "6a27d336-e2f7-47c3-9074-bb20be80a3f3",
+      "name": "heartbeat-randop",
+      "agentId": "randop",
+      "updatedAtMs": 1790677803076,
+      "declarationKey": "heartbeat:randop",
+      "displayName": "Heartbeat (randop)",
+      "enabled": true,
+      "nextRunAt": "2026-09-29T10:59:44.944Z",
+      "nextRunAtMs": 1790679584944,
+      "scheduleKind": "every",
+      "schedule": {
+        "kind": "every",
+        "everyMs": 1800000,
+        "anchorMs": 1784643
+      },
+      "lastRunAt": "2026-09-29T10:29:44.944Z",
+      "lastRunAtMs": 1790677784944,
+      "lastRunStatus": "ok",
+      "lastRunError": null,
+      "lastDeliveryStatus": "not-requested",
+      "lastFailureNotificationDeliveryStatus": "not-requested",
+      "effectiveAgentId": "randop"
+    },
+    {
+      "id": "4b0fef47-8c4c-4c0f-9026-6e74c27410f0",
+      "name": "usd-php-daily-check",
+      "agentId": "randop",
+      "updatedAtMs": 1790670567859,
+      "declarationKey": "usd-php-daily-check",
+      "displayName": "Daily USD to PHP Rate Check",
+      "owner": {
+        "agentId": "randop",
+        "sessionKey": "agent:randop:slack:channel:c06hf7y75",
+        "accountId": "default"
+      },
+      "enabled": true,
+      "nextRunAt": "2026-09-30T00:00:00.000Z",
+      "nextRunAtMs": 1790726400000,
+      "scheduleKind": "cron",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * *"
+      },
+      "lastRunAt": null,
+      "lastRunAtMs": null,
+      "lastRunStatus": null,
+      "lastRunError": null,
+      "effectiveAgentId": "randop"
+    },
+    {
+      "id": "8fc09a23-60a9-4422-b48b-4136f9755046",
+      "name": "btc-usd-daily-check",
+      "agentId": "randop",
+      "updatedAtMs": 1790677021368,
+      "declarationKey": "btc-usd-daily-check",
+      "displayName": "Daily Bitcoin to USD Price Check",
+      "owner": {
+        "agentId": "randop",
+        "sessionKey": "agent:randop:slack:channel:c06hf7y75",
+        "accountId": "default"
+      },
+      "enabled": true,
+      "nextRunAt": "2026-09-30T01:00:00.000Z",
+      "nextRunAtMs": 1790730000000,
+      "scheduleKind": "cron",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 1 * * *"
+      },
+      "lastRunAt": null,
+      "lastRunAtMs": null,
+      "lastRunStatus": null,
+      "lastRunError": null,
+      "effectiveAgentId": "randop"
+    },
+    {
+      "id": "a1f08e5c-22ae-42de-ab46-72f9233b1cbf",
+      "name": "Memory Dreaming Promotion",
+      "updatedAtMs": 1790667846706,
+      "declarationKey": "memory-core:memory-dreaming-promotion",
+      "enabled": true,
+      "nextRunAt": "2026-09-30T03:00:00.000Z",
+      "nextRunAtMs": 1790737200000,
+      "scheduleKind": "cron",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *"
+      },
+      "lastRunAt": null,
+      "lastRunAtMs": null,
+      "lastRunStatus": null,
+      "lastRunError": null,
+      "effectiveAgentId": "randop"
+    },
+    {
+      "id": "4ba9ca60-bd51-48dd-9878-19969f3bdd57",
+      "name": "skill-collection-review-randop",
+      "agentId": "randop",
+      "updatedAtMs": 1790667849606,
+      "declarationKey": "skill-collection-review:randop",
+      "displayName": "Skill collection review (randop)",
+      "enabled": true,
+      "nextRunAt": "2026-10-04T22:59:44.643Z",
+      "nextRunAtMs": 1791154784643,
+      "scheduleKind": "every",
+      "schedule": {
+        "kind": "every",
+        "everyMs": 604800000,
+        "anchorMs": 341984643
+      },
+      "lastRunAt": null,
+      "lastRunAtMs": null,
+      "lastRunStatus": null,
+      "lastRunError": null,
+      "effectiveAgentId": "randop"
+    }
+  ],
+  "snapshotRevision": "sha256:M-O98YPqpjripaakcTQaH4Q2Ms7vcAAssqUCmAQyBOg",
+  "total": 5,
+  "offset": 0,
+  "limit": 5,
+  "hasMore": false,
+  "nextOffset": null,
+  "scope": "gateway"
+}
