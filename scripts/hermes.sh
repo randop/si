@@ -3,7 +3,7 @@ set -euo pipefail
 
 # --- Defaults ---
 API_BASE="https://inference-api.nousresearch.com/v1"
-NOUS_MODEL="${NOUS_MODEL:-stepfun/step-3.7-flash}"
+NOUS_MODEL="${NOUS_MODEL:-stepfun/step-3.7-flash:free}"
 OUTPUT_FILE="hermes-models.json"
 DO_CHAT=false
 DO_LIST=false
@@ -111,7 +111,8 @@ if [[ "$DO_CHAT" == true ]]; then
           {role: "system", content: "You are a helpful assistant."},
           {role: "user", content: $prompt}
         ],
-        max_tokens: $max_tokens
+        max_tokens: $max_tokens,
+        tags: ["user=hermes-cli"]
       }')" | jq .
 
   echo
